@@ -27,4 +27,15 @@ const legal = defineCollection({
   }),
 });
 
-export const collections = { blog, legal };
+const pages = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      ogImage: image().optional(),
+      banner: z.boolean().optional().default(false),
+      containerClass: z.string().optional(),
+    }),
+});
+
+export const collections = { blog, legal, pages };

@@ -1,0 +1,263 @@
+---
+import { getImage } from "astro:assets";
+import { Image } from "astro:assets";
+
+const { image } = Astro.props;
+---
+
+<section class="py-32">
+  <div class="container">
+    <div class="mx-auto flex max-w-screen-md flex-col items-center gap-6">
+      <h2 class="mb-4 text-center text-3xl font-semibold lg:text-5xl">
+        This is where your feature goes
+      </h2>
+      <p class="text-center text-balance text-zinc-600 lg:text-2xl">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae aut
+        doloribus voluptatum distinctio! Eum
+      </p>
+    </div>
+    <div class="mt-24">
+      <div
+        dir="ltr"
+        data-orientation="horizontal"
+        class="mx-auto flex w-fit flex-col items-center gap-8 md:gap-12"
+      >
+        <div
+          role="tablist"
+          aria-orientation="horizontal"
+          class="flex h-auto flex-wrap items-center justify-center gap-x-2 rounded-md bg-zinc-100 p-2 text-zinc-600"
+          tabindex="-1"
+          data-orientation="horizontal"
+          style="outline: none"
+        >
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="radix-:R2:-content-1"
+            data-state="active"
+            id="radix-:R2:-trigger-1"
+            class="ring-offset-background focus-visible:ring-ring data-[state=active]:text-foreground inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-all hover:bg-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:shadow-sm md:text-base"
+            tabindex="-1"
+            data-orientation="horizontal"
+            data-radix-collection-item=""
+          >
+            Product</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="radix-:R2:-content-2"
+            data-state="inactive"
+            id="radix-:R2:-trigger-2"
+            class="ring-offset-background focus-visible:ring-ring data-[state=active]:text-foreground inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-all hover:bg-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:shadow-sm md:text-base"
+            tabindex="-1"
+            data-orientation="horizontal"
+            data-radix-collection-item=""
+          >
+            Services</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="radix-:R2:-content-3"
+            data-state="inactive"
+            id="radix-:R2:-trigger-3"
+            class="ring-offset-background focus-visible:ring-ring data-[state=active]:text-foreground inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-all hover:bg-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:shadow-sm md:text-base"
+            tabindex="-1"
+            data-orientation="horizontal"
+            data-radix-collection-item=""
+          >
+            Company</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="radix-:R2:-content-4"
+            data-state="inactive"
+            id="radix-:R2:-trigger-4"
+            class="ring-offset-background focus-visible:ring-ring data-[state=active]:text-foreground inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-all hover:bg-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:shadow-sm md:text-base"
+            tabindex="-1"
+            data-orientation="horizontal"
+            data-radix-collection-item=""
+          >
+            Portfolio</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="radix-:R2:-content-5"
+            data-state="inactive"
+            id="radix-:R2:-trigger-5"
+            class="ring-offset-background focus-visible:ring-ring data-[state=active]:text-foreground inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-all hover:bg-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:shadow-sm md:text-base"
+            tabindex="-1"
+            data-orientation="horizontal"
+            data-radix-collection-item=""
+          >
+            Blog
+          </button>
+        </div>
+        <div
+          data-state="active"
+          data-orientation="horizontal"
+          role="tabpanel"
+          aria-labelledby="radix-:R2:-trigger-1"
+          id="radix-:R2:-content-1"
+          tabindex="0"
+          class="ring-offset-background focus-visible:ring-ring mt-2 max-w-screen-lg focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+          style="animation-duration: 0s"
+        >
+          <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+            <div>
+              <h2 class="mb-4 text-2xl font-semibold md:text-4xl">
+                Ready to use blocks
+              </h2>
+              <p class="text-xl text-zinc-600">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Suscipit, voluptatibus.
+              </p>
+              <ul class="mt-8 grid grid-cols-1 gap-2 lg:grid-cols-2">
+                <li class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check w-4"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg><span class="font-medium">Integrations</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check w-4"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg><span class="font-medium">Components</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check w-4"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg><span class="font-medium">Blocks</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check w-4"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg><span class="font-medium">Templates</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="mt-8 flex items-center gap-2 font-medium hover:underline"
+                >Learn more<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg></a
+              >
+            </div>
+            <Image
+              src={image}
+              alt="Ready to use blocks"
+              class="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
+            />
+          </div>
+        </div>
+        <div
+          data-state="inactive"
+          data-orientation="horizontal"
+          role="tabpanel"
+          aria-labelledby="radix-:R2:-trigger-2"
+          hidden=""
+          id="radix-:R2:-content-2"
+          tabindex="0"
+          class="ring-offset-background focus-visible:ring-ring mt-2 max-w-screen-lg focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+        </div>
+        <div
+          data-state="inactive"
+          data-orientation="horizontal"
+          role="tabpanel"
+          aria-labelledby="radix-:R2:-trigger-3"
+          hidden=""
+          id="radix-:R2:-content-3"
+          tabindex="0"
+          class="ring-offset-background focus-visible:ring-ring mt-2 max-w-screen-lg focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+        </div>
+        <div
+          data-state="inactive"
+          data-orientation="horizontal"
+          role="tabpanel"
+          aria-labelledby="radix-:R2:-trigger-4"
+          hidden=""
+          id="radix-:R2:-content-4"
+          tabindex="0"
+          class="ring-offset-background focus-visible:ring-ring mt-2 max-w-screen-lg focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+        </div>
+        <div
+          data-state="inactive"
+          data-orientation="horizontal"
+          role="tabpanel"
+          aria-labelledby="radix-:R2:-trigger-5"
+          hidden=""
+          id="radix-:R2:-content-5"
+          tabindex="0"
+          class="ring-offset-background focus-visible:ring-ring mt-2 max-w-screen-lg focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+---
+import SubpageLayout from "@/layouts/subpage-layout.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+  return pages.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+type Props = CollectionEntry<"pages">;
+
+const page = Astro.props;
+const slug = Astro.params.slug;
+const { Content } = await page.render();
+
+if (!slug || !page) {
+  return new Response(null, {
+    status: 404,
+    statusText: "Not found",
+  });
+}
+---
+
+<SubpageLayout {...page}>
+  <Content />
+</SubpageLayout>

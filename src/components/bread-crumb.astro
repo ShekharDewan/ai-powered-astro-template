@@ -1,0 +1,50 @@
+---
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Icon } from "astro-icon/components";
+import { HomeIcon } from "lucide-react";
+interface Props {
+  currentPath: string;
+}
+const { currentPath } = Astro.props;
+
+const segments = currentPath.split("/").filter(Boolean);
+let accumulatedPath = "";
+---
+
+<Breadcrumb>
+  <BreadcrumbList>
+    <BreadcrumbItem>
+      <BreadcrumbLink href="/"
+        ><Icon name="ri:home-3-line" class="size-4" /></BreadcrumbLink
+      >
+    </BreadcrumbItem>
+    {segments.length > 0 && <BreadcrumbSeparator />}
+    {
+      segments.map((segment, index) => {
+        accumulatedPath += `/${segment}`;
+        const isLast = index === segments.length - 1;
+        return (
+          <>
+            <BreadcrumbItem className="capitalize">
+              {isLast ? (
+                <BreadcrumbPage>{segment.replace(/-/g, " ")}</BreadcrumbPage>
+              ) : (
+                <BreadcrumbLink href={accumulatedPath}>
+                  {segment.replace(/-/g, " ")}
+                </BreadcrumbLink>
+              )}
+            </BreadcrumbItem>
+            {!isLast && <BreadcrumbSeparator />}
+          </>
+        );
+      })
+    }
+  </BreadcrumbList>
+</Breadcrumb>

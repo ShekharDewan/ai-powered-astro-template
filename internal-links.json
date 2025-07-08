@@ -1,32 +1,82 @@
 [
   {
     "title": "Home",
-    "link": "https://ai-powered-astro-template.pages.dev/",
+    "link": "/",
     "short_description": "The main landing page of the website."
   },
   {
+    "title": "About",
+    "link": "/about/",
+    "short_description": "Information about the company or project."
+  },
+  {
     "title": "Blog",
-    "link": "https://ai-powered-astro-template.pages.dev/blog/",
+    "link": "/blog/",
     "short_description": "The main blog page with a list of all articles."
   },
   {
-    "title": "100x SEO Reach with AI Tools and Strategy",
-    "link": "https://ai-powered-astro-template.pages.dev/blog/100x-seo-reach-ai-tools-strategy/",
-    "short_description": "A blog post about leveraging AI for SEO."
+    "title": "100x Seo Reach Ai Tools Strategy",
+    "link": "/blog/100x-seo-reach-ai-tools-strategy/",
+    "short_description": "Learn how to 100x your SEO reach with AI tools and strategy."
   },
   {
-    "title": "AI Automation Category",
-    "link": "https://ai-powered-astro-template.pages.dev/blog/category/ai%20automation/",
+    "title": "Ai In Business Key Trends Reshaping Enterprise Technology",
+    "link": "/blog/ai-in-business-key-trends-reshaping-enterprise-technology/",
+    "short_description": "Discover the key AI trends that are reshaping enterprise technology."
+  },
+  {
+    "title": "Blog Category Ai Automation",
+    "link": "/blog/category/ai%20automation/",
     "short_description": "Blog posts categorized under AI Automation."
   },
   {
-    "title": "ISO Certificate",
-    "link": "https://ai-powered-astro-template.pages.dev/legal/certificates/iso/",
-    "short_description": "Information about the ISO certification."
+    "title": "Blog Category AI Automation",
+    "link": "/blog/category/AI%20Automation/",
+    "short_description": "Blog posts categorized under AI Automation."
   },
   {
-    "title": "Privacy Policy",
-    "link": "https://ai-powered-astro-template.pages.dev/legal/privacy-policy/",
+    "title": "Blog Category AI For Business",
+    "link": "/blog/category/AI%20for%20Business/",
+    "short_description": "Blog posts categorized under AI for Business."
+  },
+  {
+    "title": "Blog Category AI Strategy",
+    "link": "/blog/category/AI%20Strategy/",
+    "short_description": "Blog posts categorized under AI Strategy."
+  },
+  {
+    "title": "Blog Category AI Transformation",
+    "link": "/blog/category/AI%20Transformation/",
+    "short_description": "Blog posts categorized under AI Transformation."
+  },
+  {
+    "title": "How Ai Agencies Are Transforming Businesses In 2025",
+    "link": "/blog/how-ai-agencies-are-transforming-businesses-in-2025/",
+    "short_description": "Read about how AI agencies are set to transform businesses in the year 2025."
+  },
+  {
+    "title": "How Ai Automation Can 10x Your Business Growth",
+    "link": "/blog/how-ai-automation-can-10x-your-business-growth/",
+    "short_description": "A guide on using AI automation to achieve 10x business growth."
+  },
+  {
+    "title": "Leveling The Playing Field How Ai Agencies Help Smbs Challenge Big Tech",
+    "link": "/blog/leveling-the-playing-field-how-ai-agencies-help-smbs-challenge-big-tech/",
+    "short_description": "An article on how AI agencies are helping SMBs compete with big tech companies."
+  },
+  {
+    "title": "Revolutionizing Customer Support With Ai",
+    "link": "/blog/revolutionizing-customer-support-with-ai/",
+    "short_description": "Exploring the revolution in customer support brought about by AI."
+  },
+  {
+    "title": "Legal Certificates Iso",
+    "link": "/legal/certificates/iso/",
+    "short_description": "Information about ISO certification."
+  },
+  {
+    "title": "Legal Privacy Policy",
+    "link": "/legal/privacy-policy/",
     "short_description": "The privacy policy for the website."
   }
 ]

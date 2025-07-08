@@ -14,13 +14,18 @@ type Props = {
   description?: string;
   mainClass?: string;
   frontmatter?: { title: string };
+  image?: string;
 };
 
-const { title, description, mainClass, frontmatter } = Astro.props;
+const { title, description, mainClass, frontmatter, image } = Astro.props;
 const { pathname } = Astro.url;
 ---
 
-<BaseLayout title={frontmatter?.title || title} description={description}>
+<BaseLayout
+  title={frontmatter?.title || title}
+  description={description}
+  image={image}
+>
   <Header className="border-b">
     <!-- if use Navigation Menu on desktop -->
     <MainNavigationMenu slot="left-header" client:load pathname={pathname} />

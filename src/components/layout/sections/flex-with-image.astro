@@ -1,0 +1,64 @@
+---
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { cn } from "@/lib/utils";
+
+interface Props {
+  heading: string;
+  title: string;
+  details: string;
+  cta: string;
+  ctaLink: string;
+  image: ImageMetadata;
+  alt: string;
+  reverse: boolean;
+}
+
+const {
+  heading,
+  title,
+  details,
+  cta,
+  ctaLink,
+  image,
+  alt,
+  reverse = false,
+} = Astro.props;
+---
+
+<section class="container mx-auto mt-8 w-full space-y-20 md:mt-16">
+  <div
+    class={cn(
+      "flex flex-col items-center gap-x-20 gap-y-6 md:flex-row",
+      reverse && "md:flex-row-reverse"
+    )}
+  >
+    <div
+      class="bg-muted border-border/50 aspect-[6/4] w-full basis-1/2 rounded-xl border"
+    >
+      <Image
+        src={image}
+        alt={alt || title}
+        class="h-full w-full rounded-xl object-cover"
+      />
+    </div>
+    <div class="shrink-0 basis-1/2">
+      <span class="text-muted-foreground text-sm font-semibold uppercase">
+        {heading}
+      </span>
+      <h4 class="my-3 text-3xl font-semibold tracking-tight">
+        {title}
+      </h4>
+      <p class="text-muted-foreground text-[17px]">
+        {details}
+      </p>
+      <Button asChild className="mt-6 min-w-40 rounded-full text-[15px]">
+        <a href={ctaLink}>
+          {cta}
+        </a>
+      </Button>
+    </div>
+  </div>
+</section>

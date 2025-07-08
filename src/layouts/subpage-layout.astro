@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from "astro:content";
+import MainLayout from "./main-layout.astro";
+import BreadCrumb from "@/components/bread-crumb.astro";
+import { cn } from "@/lib/utils";
+
+type Props = CollectionEntry<"pages"> & { banner?: boolean };
+const { data: frontmatter } = Astro.props;
+const {
+  title,
+  description,
+  ogImage,
+  banner = false,
+  containerClass,
+} = frontmatter;
+const currentPath = Astro.url.pathname;
+---
+
+<MainLayout title={title} description={description} image={ogImage?.src}>
+  {
+    banner && (
+      <div class="bg-accent flex h-80 w-full flex-col items-center justify-center gap-6 text-center">
+        <h1 class="text-4xl font-bold">{title}</h1>
+        <BreadCrumb currentPath={currentPath} />
+      </div>
+    )
+  }
+  <div class={cn("relative container py-10", containerClass)}>
+    <slot />
+  </div>
+</MainLayout>
